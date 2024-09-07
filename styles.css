@@ -70,7 +70,7 @@ textarea {
 /* ----- Sidebar ----- */
 .sidebar {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 5fr;
     grid-template-rows: repeat(12, 1fr) 5fr;
     grid-template-areas: 
         "headerIcon header"
@@ -89,24 +89,32 @@ textarea {
 }
 
 .sidebar-header-icon, .sidebar-header, .sidebar-icon, .list-menu {
-    display: inline;
     color: white;
 }
 
+.list-menu {
+    display: flex;
+    align-items: center;
+}
+
+.icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .sidebar-header-icon  {
-    display: inline;
     max-width: 2rem;
     max-height: 2rem;
     grid-area: headerIcon;
 }
 
 .sidebar-header {
-    display: inline;
+    font-size: 1.5rem;
     grid-area: header;
 }
 
 .sidebar-icon {
-    display: inline;
     max-width: 1rem;
     max-height: 1rem;
 }
