@@ -66,3 +66,119 @@ textarea {
     background-color: #cbd5e1;
     grid-area: 2 / 2 / 3 / 3;
 }
+
+/* ----- Sidebar ----- */
+.sidebar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(12, 1fr) 5fr;
+    grid-template-areas: 
+        "headerIcon header"
+        ". ."
+        "icon1 list1"
+        "icon2 list2"
+        "icon3 list3"
+        "icon4 list4"
+        "icon5 list5"
+        "icon6 list6"
+        ". ."
+        "icon7 list7"
+        "icon8 list8"
+        "icon9 list9"
+        ". .";
+}
+
+.sidebar-header-icon, .sidebar-header, .sidebar-icon, .list-menu {
+    display: inline;
+    color: white;
+}
+
+.sidebar-header-icon  {
+    display: inline;
+    max-width: 2rem;
+    max-height: 2rem;
+    grid-area: headerIcon;
+}
+
+.sidebar-header {
+    display: inline;
+    grid-area: header;
+}
+
+.sidebar-icon {
+    display: inline;
+    max-width: 1rem;
+    max-height: 1rem;
+}
+
+.icon-1 {
+    grid-area: icon1;
+}
+
+.list-1 {
+    grid-area: list1;
+}
+
+.icon-2 {
+    grid-area: icon2;
+}
+
+.list-2 {
+    grid-area: list2;
+}
+
+.icon-3 {
+    grid-area: icon3;
+}
+
+.list-3 {
+    grid-area: list3;
+}
+
+.icon-4 {
+    grid-area: icon4;
+}
+
+.list-4 {
+    grid-area: list4;
+}
+
+.icon-5 {
+    grid-area: icon5;
+}
+
+.list-5 {
+    grid-area: list5;
+}
+
+.icon-6 {
+    grid-area: icon6;
+}
+
+.list-6 {
+    grid-area: list6;
+}
+
+.icon-7 {
+    grid-area: icon7;
+}
+
+.list-7 {
+    grid-area: list7;
+}
+
+.icon-8 {
+    grid-area: icon8;
+}
+
+.list-8 {
+    grid-area: list8;
+}
+
+.icon-9 {
+    grid-area: icon9;
+}
+
+.list-9 {
+    grid-area: list9;
+}
