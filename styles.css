@@ -207,17 +207,69 @@ body {
     cursor: pointer;
 }
 /* ----- Header ----- */
+
+.header {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 2px -2px #c4c3c3;
+    z-index: 1;
+}
+
 .header-icon {
+    min-width: 1rem;
     max-width: 1rem;
-    max-height: 1rem;
 }
 
 .avatar-small {
-    max-width: 2rem;
-    max-height: 2rem;  
+    max-width: 1.6rem;
 }
 
 .avatar-big {
-    max-width: 3rem;
-    max-height: 3rem;  
+    max-width: 2.4rem;
+}
+
+.header-top-wrapper {
+    display: grid;
+    grid-template-columns: 0.5fr minmax(50px, 6fr) 0.5fr 0.5fr 2fr;
+    align-items: center;
+    justify-items: center;
+    margin-top: 0.6rem;
+}
+
+.searchbar, .username {
+    justify-self: start;
+}
+
+.searchbar {
+    border-radius: 100px;
+    font-size: 0.6rem;
+    height: 1.2rem;
+    width: 300px;
+    border: none;
+    background-color: #e2e8f0;
+    color: #0369a1; 
+}
+
+.username {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.searchbar:focus {
+    outline: 2px solid #cbd5e1;
+}
+
+.icon-wrapper.bell {
+    justify-self: end;
+}
+
+.avatar-small {
+    margin: 0 1rem;
+}
+
+/* --- Header Bottom --- */
+
+.header-bottom-wrapper {
+    display: grid;
+    grid-template-columns: 6fr 1fr 1fr 1fr;
 }
