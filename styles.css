@@ -110,6 +110,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 0.5rem;
 }
 
 .sidebar-header-icon  {
@@ -230,7 +231,7 @@ body {
 
 .header-top-wrapper {
     display: grid;
-    grid-template-columns: 0.5fr minmax(50px, 6fr) 0.5fr 0.5fr 2fr;
+    grid-template-columns: 0.5fr minmax(50px, 6fr) 0.5fr 0.5fr 1.5fr;
     align-items: center;
     justify-items: center;
     margin-top: 0.6rem;
@@ -276,8 +277,8 @@ body {
 
 .header-bottom-wrapper {
     display: grid;
-    grid-template-columns: 6fr 1fr 1fr 1fr;
-    margin: 0.6rem 1rem 0.6rem 0;
+    grid-template-columns: 8fr 1fr 1fr 1fr;
+    margin: 0.6rem 2rem 0.6rem 0;
     gap: 5px;
 }
 
