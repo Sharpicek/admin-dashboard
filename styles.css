@@ -398,3 +398,55 @@ body {
     color: #6b7280;
     align-self: start;
 }
+
+/* --- Cards --- */
+
+.card-icon {
+    max-width: 16px;
+    cursor: pointer;
+}
+
+.card-icon:hover {
+    transform:translateY(1px);
+}
+
+.cards-layout-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin: 5px 25px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.15) 2px 2px 2.6px;
+    border-left: 5px solid #fdba74;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 1.2rem 1fr 25px;
+    margin-bottom: 15px;
+    max-height: 200px;
+    cursor: pointer;
+}
+
+.card:hover {
+    background-color: rgb(238, 238, 238);
+}
+
+.card-icon-wrapper {
+    align-self: end;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.card-header {
+    font-size: 0.8rem;
+}
+
+.card-info {
+    font-size: 0.6rem;
+    color: #6b7280;
+}
+
