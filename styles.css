@@ -56,7 +56,6 @@ body {
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 5fr;
-    height: 100vh;
 }
 
 .sidebar {
@@ -326,4 +325,44 @@ body {
 .btn:active {
     transform:translateY(1px);
     box-shadow: 0 0 2px 2px rgb(226, 226, 226);
+}
+
+/* ----- Main ----- */
+
+.main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: minmax(1.5rem, 50px) 10fr;
+}
+
+.main-header {
+    font-size: 0.8rem;
+    margin: 25px 0 8px 25px;
+}
+
+.announcements-wrapper {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 2px 2px 2.6px;
+    margin: 5px 15px 15px 25px;
+    padding: 10px;
+}
+
+.announcement-header {
+    font-size: 0.6rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 2px;
+}
+
+.announcement-message {
+    font-size: 0.5rem;
+    color: #6b7280;
+    padding-left: 1px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #d1d5db;
+}
+
+.announcement:last-child .announcement-message {
+    border: none;
 }
