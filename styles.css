@@ -219,8 +219,8 @@ body {
 }
 
 .header-icon {
-    min-width: 1.2rem;
-    max-width: 1.2rem;
+    min-width: 1.5rem;
+    max-width: 1.5rem;
 }
 
 .avatar-small {
@@ -408,6 +408,7 @@ body {
 }
 
 .card-icon:hover {
+    transition-duration: 0.2s;
     transform:translateY(2px);
 }
 
@@ -431,7 +432,8 @@ body {
 }
 
 .card:hover {
-    background-color: rgb(245, 245, 245);
+    transition-duration: 0.5s;
+    border-color: #0ea5e9; 
 }
 
 .card-icon-wrapper {
