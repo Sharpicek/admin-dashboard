@@ -55,7 +55,6 @@ body {
 .grid-wrapper{
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 5fr;
 }
 
 .sidebar {
@@ -76,7 +75,7 @@ body {
     background-color: #0ea5e9;
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1.5fr repeat(11, 1fr) minmax(0px, 8fr);
+    grid-template-rows: 2rem repeat(11, 1.5rem) minmax(0px, 8fr);
     grid-template-areas: 
         "headerIcon header"
         ". ."
@@ -123,6 +122,10 @@ body {
     align-items: center;
     font-size: 1.2rem;
     grid-area: header;
+}
+
+.sidebar-header, .sidebar-header-icon {
+    margin-top: 15px;
 }
 
 .sidebar-icon {
