@@ -343,7 +343,7 @@ body {
     margin: 25px 0 8px 25px;
 }
 
-.announcements-wrapper {
+.announcements-wrapper, .trending-wrapper {
     background-color: white;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.15) 2px 2px 2.6px;
@@ -368,4 +368,33 @@ body {
 
 .announcement:last-child .announcement-message {
     border: none;
+}
+
+.trending-user {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 10px;
+    margin-bottom: 15px;
+}
+
+.trending-user:last-of-type {
+    margin-bottom: 0;
+}
+
+.trending-avatar {
+    max-width: 2rem;
+    grid-row: 1 / 3;
+}
+
+.trending-username {
+    font-size: 0.6rem;
+    font-weight: bold;
+    align-self: end;
+}
+
+.trending-project {
+    font-size: 0.6rem;
+    color: #6b7280;
+    align-self: start;
 }
